@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+
     font-family: 'Poppins', sans-serif;
     /* font-family: 'Inter', sans-serif; */
 }
@@ -43,8 +44,6 @@ nav li a {
     align-items: center;
     justify-content: space-between;
     gap: 130px;
-
-
 }
 
 .banner-text {
@@ -56,8 +55,9 @@ nav li a {
     background-image: url("./images/Circle\ design.svg");
     background-repeat: no-repeat;
     background-position: right;
-    background-size:contain;
+    background-size: contain;
 }
+
 /* 
 .banner-camera {
     padding: 20px;
@@ -79,8 +79,11 @@ nav li a {
     padding: 10px 24px;
     color: white;
     border: none;
-    border-radius: 41px;
     background: #E02C6D;
+}
+.oval{
+    border-radius: 41px;
+
 }
 
 .fa-arrow-right {
@@ -111,8 +114,99 @@ section {
     gap: 120px;
 }
 
+.grid-title {
+    text-align: center;
+    margin: 40px 0;
+    color: #3A3A3A;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+}
 
+.grid-container img {
+    width: 100%;   
 
+}
+
+.grid-box{
+    margin: 0 auto;
+    padding: 15px 15px;
+    width: 300px;
+    min-height: 300px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+
+}
+.grid-container {
+    max-width: 1100px;  
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    
+}
+
+.product-name {
+    color: #18191F;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.price {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 6px 0;
+}
+
+.product-details {
+    color: var(--gray-50, #787885);
+    font-family: Inter;
+    font-size: .8rem;
+    font-weight: 700;
+}
+/* .featured-container img{
+    width: 40%;
+    margin: 0 auto;
+} */
+
+.featured-container{
+    max-width: 1200px;
+    min-height: 330px;
+    margin: 150px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.featured-title{
+    color: #0A0826;
+font-size: 2.3rem;
+font-weight: 700;
+}
+.featured-description{
+    margin: 16px 0;
+    color: #6C6C6C;
+font-weight: 700;
+
+}
+footer{
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    background: #0A0826;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    padding-top: 100px;
+}
+.icons{
+    margin: 10px auto;
+    display: inline-flex;
+    gap: 15px;
+}
 
 
 
@@ -129,13 +223,19 @@ section {
         gap: 40px;
     }
 
-    .banner {
+    .banner, .featured-container {
         flex-direction: column-reverse;
+        text-align: center;
+
+        justify-content: center;
     }
 
     .logo-section {
         gap: 40px;
         margin: auto 20px;
+    }
+    .grid-container {        
+        grid-template-columns: 1fr;        
     }
 }
 
@@ -147,12 +247,13 @@ section {
         margin: 20px auto;
     }
 
-    nav, 
+    nav,
     section {
         flex-direction: column;
         gap: 50px;
     }
-    .banner{
+
+    .banner {
         /* flex-direction: column-reverse; */
         gap: 10px;
     }
@@ -161,4 +262,12 @@ section {
         gap: 40px;
         margin: auto;
     }
+    .grid-box{
+        width: 220px;        
+    }
+    .grid-container {        
+        gap : 10px;        
+    }
+
+    
 }
