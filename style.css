@@ -16,17 +16,18 @@ nav {
 }
 
 nav>ul {
+    margin-right: 20px;
+    padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 20px;
+    justify-content: center;
+    gap: 40px;
     list-style: none;
 }
 
 nav li a {
     text-decoration: none;
     color: #3A3A3A;
-    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -41,7 +42,7 @@ nav li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* gap: 130px; */
+    gap: 130px;
 
 
 }
@@ -54,6 +55,7 @@ nav li a {
 .banner-img {
     /* margin-right: 12px; */
     background-image: url("./images/Circle\ design.svg");
+    background-repeat: no-repeat;
 }
 
 .banner-camera {
@@ -81,4 +83,59 @@ font-weight: 600;
 }
 .fa-arrow-right{
     padding: 5px;
+}
+/* logo-section here */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+.logo-section{
+    max-width: 1100px;
+    margin: 170px 0 0;
+    /* padding: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 120px;
+}
+
+
+
+
+
+
+
+
+/* responsive section */
+
+/* mobile device */
+@media screen and (max-width:576px) {
+    nav,  section{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .logo-section{
+        gap: 40px;
+        margin: auto 20px;
+    }
+}
+
+
+
+@media screen and (min-width:577px) and (max-width:960px) {
+    
+    nav, .banner, section{
+        
+        gap: 40px;
+    }
+    .logo-section{
+        gap: 40px;
+        margin: auto 20px;
+    }
 }
